@@ -6,8 +6,6 @@ A Golang-MySQL-Opreration for Go's [database/sql](http://golang.org/pkg/database
 
 **Current tagged Release:** Version 1.1 (November 02, 2013)
 
-[![Build Status](https://travis-ci.org/go-sql-driver/mysql.png?branch=master)](https://travis-ci.org/go-sql-driver/mysql) *(master branch)*
-
 ---------------------------------------
 
 ## Requirements
