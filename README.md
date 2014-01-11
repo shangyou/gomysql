@@ -30,13 +30,27 @@ _Go MySQL Driver_ is an implementation of Go's `database/sql/driver` interface. 
 
 Use `mysql` as `driverName` and a valid [DSN](#dsn-data-source-name)  as `dataSourceName`:
 ```go
-import "database/sql"
-import _ "github.com/go-sql-driver/mysql"
+import "github.com/shangyou/mysql"
 
-db, err := sql.Open("mysql", "user:password@/dbname")
+mysql := wsy.Mysql{nil}
+    err := mysql.Init("root:@tcp(127.0.0.1:3306)/online?charset=utf8")
+    fmt.Println(err)
+
+    //created_at := time.Now().Unix()
+    //id, err := mysql.Insert("insert into user set username = ?, password = ?, created_at = ?", "shangyou", "123", created_at)
+    //fmt.Println(id, err)
+
+    //count, _ := mysql.Update("update user set enable='Y'")
+    //fmt.Println(count)
+
+    //count, err := mysql.Delete("delete from user where id = 2")
+    //fmt.Println(count, err)
+
+    //rs := mysql.Fetchrows("select * from user where id = 1")
+
+    rs := mysql.Fetchrows("select * from user")
+    fmt.Println(rs)
 ```
-
-[Examples are available in our Wiki](https://github.com/go-sql-driver/mysql/wiki/Examples "Go-MySQL-Driver Examples").
 
 
 ### DSN (Data Source Name)
