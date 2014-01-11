@@ -9,23 +9,6 @@ A Golang-MySQL-Opreration for Go's [database/sql](http://golang.org/pkg/database
 [![Build Status](https://travis-ci.org/go-sql-driver/mysql.png?branch=master)](https://travis-ci.org/go-sql-driver/mysql) *(master branch)*
 
 ---------------------------------------
-  * [Features](#features)
-  * [Requirements](#requirements)
-  * [Installation](#installation)
-  * [Usage](#usage)
-    * [DSN (Data Source Name)](#dsn-data-source-name)
-      * [Password](#password)
-      * [Protocol](#protocol)
-      * [Address](#address)
-      * [Parameters](#parameters)
-      * [Examples](#examples)
-    * [LOAD DATA LOCAL INFILE support](#load-data-local-infile-support)
-    * [time.Time support](#timetime-support)
-    * [Unicode support](#unicode-support)
-  * [Testing / Development](#testing--development)
-  * [License](#license)
-
----------------------------------------
 
 ## Features
   * Lightweight and [fast](https://github.com/go-sql-driver/sql-benchmark "golang MySQL-Driver performance")
