@@ -19,7 +19,7 @@ A Golang-MySQL-Opreration for Go's [database/sql](http://golang.org/pkg/database
 ## Installation
 Simple install the package to your [$GOPATH](http://code.google.com/p/go-wiki/wiki/GOPATH "GOPATH") with the [go tool](http://golang.org/cmd/go/ "go command") from shell:
 ```bash
-$ go get github.com/shangyou/mysql
+$ go get github.com/shangyou/gomysql
 ```
 Make sure [Git is installed](http://git-scm.com/downloads) on your machine and in your system's `PATH`.
 
@@ -33,7 +33,7 @@ Use `mysql` as `driverName` and a valid [DSN](#dsn-data-source-name)  as `dataSo
 package main
 
 import (
-    "github.com/shangyou/mysql"
+    "github.com/shangyou/gomysql"
     "fmt"
     //"time"
 )
