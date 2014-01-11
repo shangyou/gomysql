@@ -102,6 +102,7 @@ No Database preselected:
 ```
 user:password@/
 ```
+[more](https://github.com/go-sql-driver/mysql)
 
 ---------------------------------------
 
