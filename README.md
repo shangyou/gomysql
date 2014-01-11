@@ -60,34 +60,7 @@ func main() {
 }
 ```
 
-
-### DSN (Data Source Name)
-
-The Data Source Name has a common format, like e.g. [PEAR DB](http://pear.php.net/manual/en/package.database.db.intro-dsn.php) uses it, but without type-prefix (optional parts marked by squared brackets):
-```
-[username[:password]@][protocol[(address)]]/dbname[?param1=value1&...&paramN=valueN]
-```
-
-A DSN in its fullest form:
-```
-username:password@protocol(address)/dbname?param=value
-```
-
-Except for the databasename, all values are optional. So the minimal DSN is:
-```
-/dbname
-```
-
-If you do not want to preselect a database, leave `dbname` empty:
-```
-/
-```
-This has the same effect as an empty DSN string:
-```
-
-```
-
-#### Examples
+#### DNS Examples
 ```
 user@unix(/path/to/socket)/dbname
 ```
