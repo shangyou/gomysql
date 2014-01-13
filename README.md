@@ -37,7 +37,7 @@ import (
 )
 
 func main() {
-    mysql := wsy.Mysql{nil}
+    mysql := gomysql.Mysql{nil}
     err := mysql.Init("root:@tcp(127.0.0.1:3306)/online?charset=utf8")
     fmt.Println(err)
 
