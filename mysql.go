@@ -1,4 +1,4 @@
-package mysql
+package gomysql
 
 import (
 	"database/sql"
